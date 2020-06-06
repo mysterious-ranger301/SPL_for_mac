@@ -50,24 +50,24 @@ class SPL(cmd):
 #the module 'subprocess'. This is useful if your program needs to open
 #other apps like notepad, calc, etc. Created by Mysterious Ranger.'''
 #        self.SplError = SplError
-    def openWithApp(self, file, app):
-        if not self.checkpath(file):
-            raise self.SplError(self.err_file_path)
-        if not self.checkpath(app):
-            raise self.SplError(self.err_app_path)
-        sp.Popen([app, file])
+    #def openWithApp(self, file, app):
+     #   if not self.checkpath(file):
+      #      raise self.SplError(self.err_file_path)
+       # if not self.checkpath(app):
+        #    raise self.SplError(self.err_app_path)
+        #sp.Popen([app, file])
 #    def openWDA(self, file, app='start'):
 #        if not os.path.exists(file):
 #            raise SplError
 #        sp.Popen([app, file], shell=True)
-    def Open(self, file, app='app'):
+    def Open(self, file, app='open'):
         if not self.checkpath(file):
             raise self.SplError(self.err_file_path)
         sp.Popen([app, file])
     def openApp(self, path):
         if not self.checkpath(path):
             raise self.SplError(self.err_app_path)
-        sp.Popen(path)
+        sp.Popen(['open', path])
 #    def cmd(self, command):
 #        sp.call(command, shell=True)
     
