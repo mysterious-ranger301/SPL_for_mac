@@ -13,7 +13,7 @@ class cmd:
 #        self.__author__ = spl.__author__
         self.__instructions__ = '''Mac Version of SPL. Most of the features are not available because I do not know mac command line. Replace them with yours.'''
         self.__author__ = 'Mysterious Ranger'
-        self.__version__ = '1.0.0'
+        self.__version__ = '1.0.1'
         self.SplError = SplError
         self.err_file_path = 'File path not found.'
         self.err_app_path = 'App path not found.'
