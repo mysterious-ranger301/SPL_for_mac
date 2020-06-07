@@ -19,6 +19,8 @@ class cmd:
         self.err_app_path = 'App path not found.'
         self.mac_err = 'Command line features not available for mac. Replace this error if you know command line for mac. (because I do not).'
     def _dir(self):
+	# Replace with self.cmd('what_command_displays_dir'). Sorry about the command line features disabled by default,
+	# it's just I don't have a mac
         raise self.SplError(self.mac_err)
     def _cls(self):
         raise self.SplError(self.mac_err)
